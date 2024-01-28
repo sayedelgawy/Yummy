@@ -1,0 +1,66 @@
+/* <generalClasses> */
+.cursor-pointer{
+  cursor: pointer;
+}
+body{
+  background-color: #0D0D0D;
+}
+#website-container{
+  overflow: hidden;
+}
+.outer-loading-screen{
+  z-index: 99999;
+  background-color:#0D0D0D;
+  height: 100%;
+  width: 100%;
+}
+.inner-loading-screen{
+  z-index: 99;
+  background-color:#0D0D0D;
+  height: 100%;
+  width: 100%;
+}
+/* </generalClasses> */
+
+/* <navbar> */
+#navbar{
+  left: -16.0351rem;
+  transition: left 1 s;
+  z-index: 999;
+}
+#navbar .nav-header .logo {
+  width: 3.125rem;
+}
+
+#navbar li,
+#navbar i {
+  cursor: pointer;
+}
+#navbar .nav-tab .links{
+  top:12.5rem;
+}
+#navbar .nav-tab .links li{
+  top:12.5rem;
+  transition: top .5s;
+}
+/* </navbar> */
+
+/* <content> */
+#content{
+  width: 100%;
+}
+#searchContainer input::placeholder {
+  color: white;
+  opacity: 0.5; 
+}
+.meal-layer {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: .5s;
+}
+.meal:hover .meal-layer{
+  top:0;
+}
+/* </content> */

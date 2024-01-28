@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/font-awsome/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+    <title>Yummy</title>
+  </head>
+  <body>
+    <div class="position-relative min-vh-100" id="website-container">
+
+      <!-- <outer spinner> -->
+      <div
+        class="outer-loading-screen position-absolute min-vh-100 text-white top-0 start-0 end-0 bottom-0 justify-content-center align-items-center d-flex"
+      >
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+      </div>
+      <!-- </outer spinner> -->
+
+      <!-- <nav> -->
+      <nav id="navbar" class="bg-black min-vh-100 position-fixed d-flex top-0">
+        <div
+          class="nav-tab d-flex flex-column justify-content-between min-vh-100 p-4 text-white"
+        >
+          <div class="links position-relative">
+            <ul class="list-unstyled overflow-hidden">
+              <li class="py-2 position-relative first-link-in-links">Search</li>
+              <li class="py-2 position-relative second-link-in-links">
+                Categories
+              </li>
+              <li class="py-2 position-relative third-link-in-links">Area</li>
+              <li class="py-2 position-relative fourth-link-in-links">
+                Ingredients
+              </li>
+              <li class="py-2 position-relative fifth-link-in-links">
+                Contact Us
+              </li>
+            </ul>
+          </div>
+          <div class="nav-footer">
+            <div class="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer">
+              <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black"
+        >
+          <img class="logo" src="./images/logo.png" alt="" srcset="" />
+
+          <i
+            class="fa-solid open-close-icon fa-align-justify fa-2x open-btn"
+          ></i>
+          <i class="fa-solid open-close-icon fa-2x fa-x d-none close-btn"></i>
+          <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- </nav> -->
+
+      <!-- search box -->
+      <div class="container w-75 d-none" id="searchContainer">
+        <div class="row py-4">
+          <div class="col-md-6">
+            <input
+              class="form-control bg-transparent text-white"
+              type="text"
+              placeholder="Search By Name"
+              id="searchByNameInput"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              id="searchByLetterInput"
+              maxlength="1"
+              class="form-control bg-transparent text-white"
+              type="text"
+              placeholder="Search By First Letter"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- /search box -->
+      
+      <!-- <content> -->
+      <div id="content">
+        <div class="container position-relative vh-100" id="parentOfcontent">
+          <!-- <inner spinner> -->
+          <div
+            class="inner-loading-screen position-absolute d-none text-white top-0 start-0 end-0 bottom-0 justify-content-center align-items-center d-flex"
+          >
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+          </div>
+          <!-- </inner spinner> -->
+
+          <div class="row py-5 g-4" id="rowData"></div>
+        </div>
+      </div>
+      <!-- </content> -->
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
